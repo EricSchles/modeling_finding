@@ -1,5 +1,6 @@
 import pandas as pd
 import pygam
+from sklearn import model_selection
 from sklearn import tree
 from sklearn import ensemble
 from sklearn import svm
