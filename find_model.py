@@ -65,7 +65,7 @@ def find_model(X, y):
         fitted_model = model.fit(X_train, y_train)
         predictions = fitted_model.predict(X_test)
         scores_applied = model.predict(X)
-        rmses.append([predictions, math.sqrt(metrics.mean_squared_error(y_test.values, predictions))])
+        rmses.append([scores_applied, math.sqrt(metrics.mean_squared_error(y_test.values, predictions))])
     return rmses
 
 def choose_model(rmses):
